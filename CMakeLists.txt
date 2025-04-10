@@ -11,3 +11,8 @@ add_executable(fuse21-example fuse21.c)
 target_link_libraries(fuse21-example PUBLIC ${FUSE_LIBRARIES})
 target_include_directories(fuse21-example PUBLIC ${FUSE_INCLUDE_DIRS})
 target_compile_definitions(fuse21-example PRIVATE -D_FILE_OFFSET_BITS=64)
+
+add_executable(fuse25-example fuse25.c)
+target_link_libraries(fuse25-example PUBLIC ${FUSE_LIBRARIES})
+target_include_directories(fuse25-example PUBLIC ${FUSE_INCLUDE_DIRS})
+target_compile_definitions(fuse25-example PRIVATE -D_FILE_OFFSET_BITS=64)
